@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import ground from 'components/ground/ground.vue';
-import life from 'components/life/life.vue';
+import familyBill from 'components/familyBill/familyBill.vue';
 import share from 'components/share/share.vue';
 import chat from 'components/chat/chat.vue';
 import health from 'components/health/health.vue';
@@ -15,8 +15,8 @@ const routes = [
     component: ground
   },
   {
-    path: '/life',
-    component: life
+    path: '/familyBill',
+    component: familyBill
   },
   {
     path: '/share',

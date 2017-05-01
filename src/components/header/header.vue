@@ -2,29 +2,25 @@
   <div>
     <div class="header">
       <img src="./person.png" class="person-pic" @click="showPerson">
-      <span class="title">家庭广场</span>
+      <span class="title">efamily</span>
       <img src="./add.png" class="add-pic">
     </div>
     <div class="personal" v-show="personPage">
       <div class="avatar">
-        <img src="./avatar.png" >
+        <img src="./avatar1.jpg" >
       </div>
       <div class="userInfo">
-        <p class="userName">用户名</p>
+        <p class="userName">小慧</p>
         <p class="welcome">欢迎您</p>
       </div>
       <div class="mainFunc">
         <p>
+          <img src="./perosonalinfo.png">
+          <span>个人信息</span>
+        </p>
+        <p>
           <img src="./tel.png">
           <span>信 息 簿</span>
-        </p>
-        <p>
-          <img src="./ring.png">
-          <span>事 件 提 醒</span>
-        </p>
-        <p>
-          <img src="./message.png">
-          <span>留 言 板</span>
         </p>
       </div>
       <div class="exit">
@@ -69,7 +65,7 @@
     vertical-align: top;
     width:100%;
     height:45px;
-    background: #e86850;
+    background: #ec8ccb;
     z-index:1;
     .title
       color: #fff;
@@ -92,7 +88,7 @@
     padding:25px;
     width:240px;
     height:100%;
-    background:#ed7c67;
+    background:#ec8ccb;
     z-index:100;
     color: #fff;
     animation:fromLeft .5s;
@@ -105,6 +101,8 @@
       width: 70px;
       height: 70px;
       img
+        position: relative;
+        left: 20px;
         width:100%;
         height:100%;
         border-radius:50%;
@@ -119,12 +117,16 @@
         margin-bottom:10px;
         font-size: 20px;
       .welcome
+        margin-top:5px;
         font-size:16px;
     .mainFunc
-      margin: 60px 0 0 55px;
-      line-height: 70px;
+      width: 50%;
+      margin: 80px auto;
+      line-height: 63px;
       img
-        width:30px;
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
       span
         vertical-align: super;
         font-size: 18px;

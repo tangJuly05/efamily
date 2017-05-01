@@ -7,54 +7,68 @@
         </div>
         <div class="content">
           <span class="name">妈妈</span>
-          <p class="main">今天去了成都~</p>
+          <span class="time">2016/11/25</span>
+          <p class="main">今天一家人去了杭州旅游，西湖非常美~推荐大家过来玩！</p>
           <div class="pics">
             <img src="./pic.png">
           </div>
           <div class="rate">
             <input type="text" placeholder="输入评论">
             <input type="button" value="发送">
-            <img src="./good.png">
           </div>
-          <span class="time">2016/11/24</span>
+          <div class="rated">
+            <img src="./avatar4.jpg">
+            <span class="name">小姨：</span>
+            <span class="rating">哇，这是你拍的吗，超级漂亮！</span>
+          </div>
         </div>
       </div>
 
       <div class="content-wrapper">
         <div class="avatar">
-          <img src="./avatar.png" >
+          <img src="./avatar3.jpg" >
         </div>
         <div class="content">
-          <span class="name">妈妈</span>
-          <p class="main">今天去了成都~</p>
-          <div class="pics">
-            <img src="./pic.png">
-          </div>
+          <span class="name">爸爸</span>
+          <span class="time">2016/11/25</span>
+          <p class="main">旅游真是累呀，不过累并快乐着！</p>
           <div class="rate">
             <input type="text" placeholder="输入评论">
             <input type="button" value="发送">
-            <img src="./good.png">
           </div>
-          <span class="time">2016/11/24</span>
         </div>
       </div>
 
       <div class="content-wrapper">
         <div class="avatar">
-          <img src="./avatar.png" >
+          <img src="./avatar2.jpg" >
         </div>
         <div class="content">
-          <span class="name">妈妈</span>
-          <p class="main">今天去了成都~</p>
+          <span class="name">小表妹</span>
+          <span class="time">2016/11/24</span>
+          <p class="main">作业多到写不完！谁来帮帮我</p>
           <div class="pics">
-            <img src="./pic.png">
+            <img src="./pic2.jpg">
           </div>
           <div class="rate">
             <input type="text" placeholder="输入评论">
             <input type="button" value="发送">
-            <img src="./good.png">
           </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="avatar">
+          <img src="./avatar5.jpg" >
+        </div>
+        <div class="content">
+          <span class="name">大表哥</span>
           <span class="time">2016/11/24</span>
+          <p class="main">小宝贝今天学会叫爸爸了！！发个说说纪念一下！！</p>
+          <div class="rate">
+            <input type="text" placeholder="输入评论">
+            <input type="button" value="发送">
+          </div>
         </div>
       </div>
 
@@ -82,7 +96,7 @@
       .content-wrapper
         display: flex;
         background: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding: 10px;
         &:last-child
           margin:0;
@@ -103,8 +117,10 @@
           .name
             font-size:16px;
             font-weight:700;
-          .main
-            font-size:14px;
+          .main{
+            margin: 8px 0;
+            font-size:15px;
+          }
           .pics
             img
               margin:5px 0;
@@ -114,14 +130,14 @@
             vertical-align: top;
             input[type="text"]
               padding:0 5px;
-              border:1px solid #e86850;
+              border:1px solid #ec8ccb;
               outline: none;
               width:150px;
               height:25px;
             input[type="button"]
               position: relative;
               top: -2px;
-              background:#e86850;
+              background:#ec8ccb;
               width:40px;
               height:27px;
               color: #fff;
@@ -131,10 +147,21 @@
               height: 26px;
               margin-left: 5px;
               vertical-align: top;
+          .rated{
+            margin:5px 0 0 5px;
+            font-size:13px;
+            img{
+              width:20px;
+              border-radius:50%;
+              vertical-align: text-bottom;
+            }
+            .name{
+              color:#ec8ccb;
+            }
+          }
           .time
             position: absolute;
-            top: 10px;
-            right: 10px;
-            color: rgb(111, 111, 111);
+            color: #6f6f6f;
             font-size: 12px;
+            right: 20px;
 </style>
